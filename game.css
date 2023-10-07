@@ -1,0 +1,104 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+@keyframes winanim {
+  0%{
+    background-color: unset;
+  }
+  100%{
+      background-color: #ff4757;
+  }
+}
+
+.winneranim{
+  animation: winanim 1s ease-in-out infinite;
+}
+
+.fa-xmark {
+  position: absolute;
+  right: 17px;
+  top: 8px;
+  cursor: pointer;
+}
+
+button{
+  transition: all 1s ease-in-out;
+  border: 1px solid #ff4757!important;
+}
+button:hover{
+  background-color: #2f3542;
+  color: #ff4757;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: #2f3542;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#game_main{
+  display: none;
+}
+#game_container{
+  display: grid;
+  grid-template-columns: repeat(3,100px);
+  justify-content: center;
+}
+
+.box{
+  width: 100%;
+  height: 100px;
+  border: 2px solid #eccc68;
+  box-shadow: 0 0 0 2px #eccc68;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;  
+  font-size: 25px;
+}
+
+#status{
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+button{
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  color:white;
+  background-color: #ff4757;
+  border: none;
+  border-radius: 3px;
+}
+
+#winmain_container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  backdrop-filter: blur(2px);
+  align-items: center;
+  justify-content: center;
+}
+
+.winner_container {
+  padding: 50px;
+  background: #000000;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  position: relative;
+}

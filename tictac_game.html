@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <div class="container " id="playnow_container">
+    <div class="row justify-content-center">
+      <div class="col-3 text-center">
+        <div class="title">
+          <h4>Tic Tac Toe Game</h4>
+        </div>
+        <button id="play_now">Play Now</button>
+      </div>
+    </div>
+  </div>
+    <div class="container align-items-center flex-column gap-3" id="game_main">
+      <div id="game_container">
+      <div id="box-1" class="box" onclick="fill(this)"></div>
+      <div id="box-2" class="box" onclick="fill(this)"></div>
+      <div id="box-3" class="box" onclick="fill(this)"></div>
+      <div id="box-4" class="box" onclick="fill(this)"></div>
+      <div id="box-5" class="box" onclick="fill(this)"></div>
+      <div id="box-6" class="box" onclick="fill(this)"></div>
+      <div id="box-7" class="box" onclick="fill(this)"></div>
+      <div id="box-8" class="box" onclick="fill(this)"></div>
+      <div id="box-9" class="box" onclick="fill(this)"></div>
+    </div>
+  </div>
+  <section id="winmain_container">
+    <div class="winner_container">
+      <div class="title">
+        <h4 id="winner"></h4>
+      </div>
+      <button id="restart" onclick="resetbox()">Restart</button>
+      <i class="fa fa-xmark" onclick="resetbox()">X</i>
+    </div>
+  </section>
+
+  
+    <script src="game.js"></script>
+  </body>
+</html>
