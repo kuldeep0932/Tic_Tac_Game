@@ -38,7 +38,7 @@ function checkwin(){
 
     let winnerFound = false;
     // checking the combinations
-    for(i=1; i < wincombs.length; i++){
+    for(i=0; i < wincombs.length; i++){
         const [a, b, c] = wincombs[i];
         const boxa = document.getElementById(a).innerHTML;
         const boxb = document.getElementById(b).innerHTML;
@@ -54,7 +54,7 @@ function checkwin(){
             document.getElementById("winmain_container").style.display="flex";
             },2000);
             winnerFound =true;
-        }        
+        }       
     }
     if(winnerFound){
         document.querySelectorAll(".box").forEach(box => {
