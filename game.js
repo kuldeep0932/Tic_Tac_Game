@@ -9,17 +9,13 @@ function fill(event){
         document.getElementById(event.id).innerHTML="O";
     }
     count++;
-    // checkWinner();
     checkwin();
     console.log(count);
 }else{
+
     // document.querySelectorAll(".box").disabled = true;
 
-
-    // resetbox();
-   
 }
-
 }
 
 
