@@ -102,3 +102,28 @@ button{
   align-items: center;
   position: relative;
 }
+
+.player_name-cont{
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.player_field_grp{
+  display: flex;
+  flex-direction: column;
+}
+#p_name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.display_name_cont {
+  width: 45%;
+}
+#p_name h4 {
+  color: #eccb71;
+}
+#p_name h4 span{
+  color: #fd4659;
+}
