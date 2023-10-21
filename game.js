@@ -66,6 +66,7 @@ function checkwin() {
             }, 2000);
             winnerFound = true;
             draw = false;
+            window.sessionStorage.setItem("winner", winner);
         }
         // check the boxes are empty then this not show the match draw message
         if (!boxa || !boxb || !boxc) {
